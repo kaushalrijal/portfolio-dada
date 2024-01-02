@@ -71,13 +71,11 @@ const About = () => {
           />
         </div>
         <div className="mt-4 text-base leading-6 col-start-1 sm:col-span-2 lg:mt-6 lg:row-start-4 lg:col-span-1 text-slate-900 text-justify">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quam
-          laborum eos aspernatur aut unde dicta enim repellendus. Voluptatibus,
-          minus illum sequi adipisci nemo atque cumque excepturi quae optio
-          expedita. Cumque tempore architecto officia. Molestiae aut obcaecati
-          aliquam consequuntur consectetur! Ut odit quos iure iusto impedit
-          error harum animi. Ullam quia porro quas architecto vitae, rerum quam!
-          Pariatur, aperiam nulla.
+          As a Government Service Employee, Founder of GR Institute, and
+          Management student at TU, I thrive on serving the public. My passion
+          lies in merging academic knowledge with practical experience to effect
+          positive change. Committed to contributing to the betterment of
+          society, I am dedicated to making a meaningful impact.
           <br />
           <Link href="/about">
             <div className="bg-primary text-white p-1 w-fit my-1 flex rounded-sm text-sm items-center justify-center">
