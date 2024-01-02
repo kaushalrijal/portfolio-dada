@@ -39,6 +39,7 @@ const About = () => {
             height={512}
             className="shadow-md shadow-secondary w-full h-60 object-cover rounded-lg sm:h-52 sm:col-span-2 lg:col-span-full"
             loading="lazy"
+            unoptimized
           />
           <Image
             src="/img/IMG2.JPG"
@@ -47,6 +48,7 @@ const About = () => {
             height={512}
             className="shadow-md shadow-secondary hidden w-full h-52 object-cover rounded-lg sm:block sm:col-span-2 md:col-span-1 lg:row-start-2 lg:col-span-2 lg:h-32"
             loading="lazy"
+            unoptimized
           />
           <Image
             src="/img/IMG3.JPG"
@@ -55,6 +57,7 @@ const About = () => {
             height={512}
             className="shadow-md shadow-secondary hidden w-full h-52 object-cover rounded-lg md:block lg:row-start-2 lg:col-span-2 lg:h-32"
             loading="lazy"
+            unoptimized
           />
         </div>
         <div className="mt-4 text-base leading-6 col-start-1 sm:col-span-2 lg:mt-6 lg:row-start-4 lg:col-span-1 text-slate-900 text-justify">
