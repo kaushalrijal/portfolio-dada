@@ -22,7 +22,7 @@ const About = () => {
     //   </div>
     //   <div classNameName="flex items-center">Image will go here</div>
     // </div>
-    <main className="py-2 md:py-6">
+    <main className="py-2 md:py-1">
       <div className="max-w-4xl mx-auto grid grid-cols-1 lg:max-w-5xl lg:gap-x-8 lg:grid-cols-2">
         <div className="relative p-3 col-start-1 row-start-1 flex flex-col-reverse rounded-lg bg-gradient-to-t from-black/100 via-black/0 sm:bg-none sm:row-start-2 sm:p-0 lg:row-start-1">
           <h1 className="mt-1 text-4xl font-semibold text-slate-100 md:text-slate-900 -z-1">
@@ -40,7 +40,7 @@ const About = () => {
             height={512}
             className={`${
               loading ? "animate-pulse bg-gray-200 blur-sm" : ""
-            } shadow-md shadow-secondary w-full h-60 object-cover rounded-lg sm:h-52 sm:col-span-2 lg:col-span-full`}
+            } shadow-sm shadow-secondary w-full h-60 object-cover rounded-lg sm:h-52 sm:col-span-2 lg:col-span-full`}
             loading="lazy"
             unoptimized
             onLoad={() => setLoading(false)}
@@ -52,7 +52,7 @@ const About = () => {
             height={512}
             className={`${
               loading ? "animate-pulse bg-gray-200 blur-sm" : ""
-            } shadow-md shadow-secondary hidden w-full h-52 object-cover rounded-lg sm:block sm:col-span-2 md:col-span-1 lg:row-start-2 lg:col-span-2 lg:h-32`}
+            } shadow-sm shadow-secondary hidden w-full h-52 object-cover rounded-lg sm:block sm:col-span-2 md:col-span-1 lg:row-start-2 lg:col-span-2 lg:h-32`}
             loading="lazy"
             unoptimized
             onLoad={() => setLoading(false)}
@@ -64,7 +64,7 @@ const About = () => {
             height={512}
             className={`${
               loading ? "animate-pulse bg-gray-200 blur-sm" : ""
-            } shadow-md shadow-secondary hidden w-full h-52 object-cover rounded-lg md:block lg:row-start-2 lg:col-span-2 lg:h-32`}
+            } shadow-sm shadow-secondary hidden w-full h-52 object-cover rounded-lg md:block lg:row-start-2 lg:col-span-2 lg:h-32`}
             loading="lazy"
             unoptimized
             onLoad={() => setLoading(false)}
@@ -76,17 +76,13 @@ const About = () => {
           blend academic insights with practical experience, aiming for positive
           change. Dedicated to the betterment of society, I strive to make a
           meaningful and lasting impact through my multifaceted roles as a
-          student and professional.
-          <br />
+          student and professional. More
           <Link href="/about">
-            <div className="bg-primary text-white p-1 w-fit my-4 flex rounded-sm text-sm items-center justify-center">
-              Read More
-              <ArrowRight className="p-1.5 justify-center items-center" />
-            </div>
+            <span className="text-primary"> here</span>
           </Link>
         </div>
       </div>
-      <div className="text-sm md:text-base border-t-2 border-secondary border-b-2 flex justify-between py-1 my-2">
+      <div className="text-sm md:text-base border-t-2 border-secondary border-b-2 flex justify-between py-1 my-4">
         <p className="text-base">Let&apos;s connect: </p>
         <div className="flex justify-between w-1/2 text-secondary">
           <Link href="https://m.facebook.com/gaurabtheanupam" target="none">
