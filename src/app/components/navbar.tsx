@@ -15,7 +15,7 @@ const Navbar = () => {
   const pathname = usePathname();
   return (
     <div className="sticky top-0 w-full z-10">
-      <div className="flex items-center justify-between w-full px-8 bg-white z-10 md:justify-center md:gap-6 py-2 pt-4 md:py-4">
+      <div className="flex items-center justify-between w-full px-2.5 bg-white z-10 md:justify-center md:gap-6 py-2 pt-4 md:py-4">
         {navitems.map((item) => {
           return (
             <Link href={item.href} key={item.id}>
