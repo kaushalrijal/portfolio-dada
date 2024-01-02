@@ -71,14 +71,15 @@ const About = () => {
           />
         </div>
         <div className="mt-4 text-base leading-6 col-start-1 sm:col-span-2 lg:mt-6 lg:row-start-4 lg:col-span-1 text-slate-900 text-justify">
-          As a Government Service Employee, Founder of GR Institute, and
-          Management student at TU, I thrive on serving the public. My passion
-          lies in merging academic knowledge with practical experience to effect
-          positive change. Committed to contributing to the betterment of
-          society, I am dedicated to making a meaningful impact.
+          As a Government Service Employee, Founder of GR Institute, and a TU
+          Management student, my commitment to public service is unwavering. I
+          blend academic insights with practical experience, aiming for positive
+          change. Dedicated to the betterment of society, I strive to make a
+          meaningful and lasting impact through my multifaceted roles as a
+          student and professional.
           <br />
           <Link href="/about">
-            <div className="bg-primary text-white p-1 w-fit my-1 flex rounded-sm text-sm items-center justify-center">
+            <div className="bg-primary text-white p-1 w-fit my-4 flex rounded-sm text-sm items-center justify-center">
               Read More
               <ArrowRight className="p-1.5 justify-center items-center" />
             </div>
