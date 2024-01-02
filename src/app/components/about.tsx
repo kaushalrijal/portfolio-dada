@@ -15,7 +15,7 @@ const About = () => {
   return (
     // <div classNameName="flex flex-col-reverse md:flex-row w-full justify-between my-2">
     //   <div classNameName="flex justify-start flex-col">
-    //     <h3 classNameName="text-xs md:text-sm">Hello, I'm</h3>
+    //     <h3 classNameName="text-xs md:text-sm">Hello, Im</h3>
     //     <h1 classNameName="text-xl md:text-3xl lg:text-5xl">Gaurav Rijal</h1>
     //     <h2 classNameName="text-sm md:text-base lg:text-lg">A Human Being</h2>
     //   </div>
@@ -28,7 +28,7 @@ const About = () => {
             Gaurav Rijal
           </h1>
           <p className="text-sm leading-4 font-medium text-slate-100 md:text-slate-900">
-            Hey, I'm
+            Hey, I&apos;m
           </p>
         </div>
         <div className="grid gap-4 col-start-1 col-end-3 row-start-1 sm:mb-6 sm:grid-cols-4 lg:gap-6 lg:col-start-2 lg:row-end-6 lg:row-span-6 lg:mb-0">
@@ -75,7 +75,7 @@ const About = () => {
         </div>
       </div>
       <div className="text-sm md:text-base border-t-2 border-secondary border-b-2 flex justify-between py-1 my-2">
-        <p className="text-base">Let's connect: </p>
+        <p className="text-base">Let&apos;s connect: </p>
         <div className="flex justify-between w-1/2 text-secondary">
           <Link href="https://m.facebook.com/gaurabtheanupam" target="none">
             <FacebookRounded className="p-0.5 hover:rounded-full hover:bg-slate-400/75" />
