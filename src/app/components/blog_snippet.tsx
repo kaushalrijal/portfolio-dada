@@ -5,9 +5,9 @@ import { BlogItem, BlogMajor } from "./blog_item";
 const Blogs = () => {
   return (
     <div className="my-2">
-      <span className="text-secondary text-2xl font-semibold gap-1 flex justify-between w-full">
+      <span className="text-secondary text-3xl font-semibold gap-1 flex justify-between w-full my-1">
         Blogs
-        <div className="flex items-end text-xs font-normal hover:text-primary cursor-pointer hover:underline">
+        <div className="flex items-center text-xs font-normal hover:text-primary cursor-pointer hover:underline">
           View all
           <ArrowRight className="w-3 h-auto pb-0.5" />
         </div>
@@ -16,7 +16,8 @@ const Blogs = () => {
         <div className="w-full md:w-1/2 h-full">
           <BlogMajor />
         </div>
-        <div className="w-full md:w-1/2 h-full rounded-md">
+        <div className="w-full md:w-1/2 h-full rounded-md gap-2 flex-col flex">
+          <BlogItem />
           <BlogItem />
         </div>
       </div>

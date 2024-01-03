@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 const Notices = () => {
   return (
     <div className="mb-4">
-      <span className="text-secondary text-2xl font-semibold gap-1 flex justify-between">
+      <span className="text-secondary text-3xl font-semibold gap-1 flex justify-between">
         Notices
         <div className="flex items-end text-xs font-normal hover:text-primary cursor-pointer hover:underline">
           View all

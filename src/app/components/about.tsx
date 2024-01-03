@@ -86,19 +86,19 @@ const About = () => {
         <p className="text-base">Let&apos;s connect: </p>
         <div className="flex justify-between w-1/2 text-secondary">
           <Link href="https://m.facebook.com/gaurabtheanupam" target="none">
-            <FacebookRounded className="p-0.5 hover:rounded-full hover:bg-slate-400/75" />
+            <FacebookRounded className="p-0.5 md:w-8 md:h-8 w-6 h-auto hover:rounded-full hover:bg-slate-400/75" />
           </Link>
           <Link href="https://twitter.com/gaurabrijal4" target="none">
-            <Twitter className="p-0.5 hover:rounded-full hover:bg-slate-400/75" />
+            <Twitter className="p-0.5 md:w-8 md:h-8 w-6 h-auto hover:rounded-full hover:bg-slate-400/75" />
           </Link>
           <Link href="https://instagram.com/gaurabtheanupam" target="none">
-            <Instagram className="p-0.5 hover:rounded-full hover:bg-slate-400/75" />
+            <Instagram className="p-0.5 md:w-8 md:h-8 w-6 h-auto hover:rounded-full hover:bg-slate-400/75" />
           </Link>
           <Link href="https://wa.me/9852655972" target="none">
-            <WhatsApp className="p-0.5 hover:rounded-full hover:bg-slate-400/75" />
+            <WhatsApp className="p-0.5 md:w-8 md:h-8 w-6 h-auto hover:rounded-full hover:bg-slate-400/75" />
           </Link>
           <Link href="mailto:grr4425@gmail.com" target="none">
-            <Mail className="p-0.5 hover:rounded-full hover:bg-slate-400/75" />
+            <Mail className="p-0.5 md:w-8 md:h-8 w-6 h-auto hover:rounded-full hover:bg-slate-400/75" />
           </Link>
         </div>
       </div>

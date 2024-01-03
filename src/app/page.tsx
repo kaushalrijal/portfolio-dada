@@ -3,6 +3,7 @@ import Navbar from "./components/navbar";
 import About from "./components/about";
 import Notices from "./components/notice_list";
 import Blogs from "./components/blog_snippet";
+import Books from "./components/books";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <About />
       <Notices />
       <Blogs />
+      <Books />
     </main>
   );
 }
