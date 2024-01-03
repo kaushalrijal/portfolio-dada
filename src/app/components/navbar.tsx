@@ -8,14 +8,15 @@ const navitems = [
   { id: 1, value: "Home", href: "/" },
   { id: 2, value: "About", href: "/about" },
   { id: 3, value: "Blogs", href: "/blogs" },
-  { id: 4, value: "Contact", href: "/contact" },
+  { id: 4, value: "Misc", href: "/misc" },
+  { id: 5, value: "Contact", href: "/contact" },
 ];
 
 const Navbar = () => {
   const pathname = usePathname();
   return (
     <div className="sticky top-0 w-full z-10 rounded-sm">
-      <div className="flex items-center justify-between w-full px-2.5 bg-white backdrop-blur-sm z-10 md:justify-center md:gap-6 py-2 md:py-4">
+      <div className="flex items-center justify-between w-full px-2.5 bg-white backdrop-blur-sm z-10 md:justify-center md:gap-6 py-2 md:py-4 text-lg sm:text-base">
         {navitems.map((item) => {
           return (
             <Link href={item.href} key={item.id}>
