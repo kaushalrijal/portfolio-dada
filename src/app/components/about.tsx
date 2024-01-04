@@ -25,10 +25,10 @@ const About = () => {
     <main className="py-2 md:py-1">
       <div className="max-w-4xl mx-auto grid grid-cols-1 lg:max-w-5xl lg:gap-x-8 lg:grid-cols-2">
         <div className="relative p-3 col-start-1 row-start-1 flex flex-col-reverse rounded-lg bg-gradient-to-t from-black/100 via-black/0 sm:bg-none sm:row-start-2 sm:p-0 lg:row-start-1">
-          <h1 className="mt-1 text-4xl font-semibold text-slate-100 -z-1">
+          <h1 className="mt-1 text-4xl font-semibold text-slate-100 sm:text-secondary -z-1">
             Gaurav Rijal
           </h1>
-          <p className="text-sm leading-4 font-medium text-slate-100">
+          <p className="text-sm leading-4 font-medium text-slate-100 sm:text-secondary">
             Hey, I&apos;m
           </p>
         </div>
@@ -40,7 +40,7 @@ const About = () => {
             height={512}
             className={`${
               loading ? "animate-pulse bg-gray-200 blur-sm" : ""
-            } shadow-sm shadow-secondary w-full h-60 object-cover rounded-lg sm:h-52 sm:col-span-2 lg:col-span-full`}
+            } sm:shadow-sm sm:shadow-secondary w-full h-60 object-cover rounded-lg sm:h-52 sm:col-span-2 lg:col-span-full`}
             loading="lazy"
             unoptimized
             onLoad={() => setLoading(false)}
