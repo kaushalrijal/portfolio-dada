@@ -91,7 +91,8 @@ const About = () => {
           />
         </div>
       </div>
-      <div className="w-full flex flex-col text-sm my-4 gap-2">
+
+      <div className="w-full flex flex-col text-sm my-4 gap-2 border-t-black border-t-2 pt-6">
         {details.map((_) => {
           return <QA title={_.title} sub={_.sub} key={_.title} />;
         })}

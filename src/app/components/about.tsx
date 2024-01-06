@@ -71,12 +71,12 @@ const About = () => {
           />
         </div>
         <div className="mt-4 text-lg leading-6 col-start-1 sm:col-span-2 lg:mt-6 lg:row-start-4 lg:col-span-1 text-slate-900 text-justify">
-          As a Government Service Employee, Founder of GR Institute, and a TU
-          Management student, my commitment to public service is unwavering. I
-          blend academic insights with practical experience, aiming for positive
-          change. Dedicated to the betterment of society, I strive to make a
-          meaningful and lasting impact through my multifaceted roles as a
-          student and professional. More
+          सरकारी सेवा कर्मचारी, जी.आर. इन्स्टिच्युटको संस्थापक र TU, व्यवस्थापन
+          विधाको विद्यार्थीको रूपमा, सार्वजनिक सेवामा मेरो प्रतिबद्धता अटल छ। म
+          व्यावहारिक अनुभव संग शैक्षिक अन्तर्दृष्टि मिश्रण गरि, सकारात्मक
+          परिवर्तन को लक्ष्य सहित अघि बढेको छु । समाजको सुधारको लागि समर्पित, म
+          एक विद्यार्थी र व्यवसायीको रूपमा मेरो बहुआयामिक भूमिकाहरू मार्फत
+          अर्थपूर्ण र दिगो प्रभाव पार्ने प्रयासमा तत्पर छु । More
           <Link href="/about">
             <span className="text-primary"> here</span>
           </Link>
