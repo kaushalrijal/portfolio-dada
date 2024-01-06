@@ -29,7 +29,7 @@ export const BlogItem = () => {
 
 export const BlogMajor = () => {
   return (
-    <div className="relative h-60 items-end flex overflow-hidden rounded-md group hover:scale-105 duration-100 cursor-pointer group-hover:shadow-sm group-hover:shadow-black">
+    <div className="relative h-48 items-end flex overflow-hidden rounded-md group hover:scale-105 duration-100 cursor-pointer group-hover:shadow-sm group-hover:shadow-black">
       <Image
         src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         width={256}

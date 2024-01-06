@@ -22,7 +22,7 @@ const Navbar = () => {
             <Link href={item.href} key={item.id}>
               <div
                 key={item.id}
-                className={`p-0.5 rounded-sm hover:ring-1 hover:ring-secondary
+                className={`p-0.5 rounded-sm hover:ring-1 hover:ring-primary
                 ${
                   pathname === item.href
                     ? "bg-primary text-white"
