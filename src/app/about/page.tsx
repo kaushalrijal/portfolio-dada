@@ -80,7 +80,7 @@ const About = () => {
             <Phone /> +977 9852655972
           </Link>
         </div>
-        <div className="text-9xl hidden md:flex">{"}"}</div>
+        <div className=" text-9xl hidden md:flex">{"}"}</div>
         <div>
           <Image
             src="/img/IMG_ABOUT.JPG"
