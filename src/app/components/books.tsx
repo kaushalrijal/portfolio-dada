@@ -12,7 +12,7 @@ const Books = () => {
           <ArrowRight className="w-3 h-auto pb-0.5" />
         </div>
       </span>
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-3 items-center px-2 sm:px-0">
+      <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-3 items-center px-2 sm:px-0">
         <Book />
         <Book />
         <Book />
