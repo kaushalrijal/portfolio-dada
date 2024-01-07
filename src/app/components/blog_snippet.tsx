@@ -16,9 +16,17 @@ const Blogs = () => {
         <div className="w-full md:w-1/2 h-full">
           <BlogMajor />
         </div>
-        <div className="w-full md:w-1/2 h-full rounded-md gap-2 flex-col flex">
-          <BlogItem />
-          <BlogItem />
+        <div className="w-full md:w-1/2 h-full rounded-md sm:gap-3 flex-col flex justify-between">
+          <BlogItem
+            title={"A blog title"}
+            slug={"random"}
+            description={"this is the description "}
+          />
+          <BlogItem
+            title={"A blog title"}
+            slug={"random"}
+            description={"this is the description "}
+          />
         </div>
       </div>
     </div>

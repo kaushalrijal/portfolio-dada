@@ -18,7 +18,7 @@ const About = () => {
       <div className="max-w-4xl mx-auto grid grid-cols-1 lg:max-w-5xl lg:gap-x-8 lg:grid-cols-2">
         <div className="relative p-3 col-start-1 row-start-1 flex flex-col-reverse rounded-lg bg-gradient-to-t from-black/100 via-black/0 sm:bg-none sm:row-start-2 sm:p-0 lg:row-start-1">
           <h1 className="mt-1 text-4xl font-semibold text-slate-100 sm:text-secondary -z-1">
-            Gaurav Rijal
+            Gaurav <span className="text-primary">Rijal</span>
           </h1>
           <p className="text-sm leading-4 font-medium text-slate-100 sm:text-secondary">
             नमस्कार, म
