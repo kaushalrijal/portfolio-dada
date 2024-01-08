@@ -1,7 +1,9 @@
 import React, { ReactNode } from "react";
 import Image from "next/image";
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 export const BlogItem = (props: {
+  image: string | undefined;
   description: ReactNode;
   title:
     | string
@@ -25,9 +27,9 @@ export const BlogItem = (props: {
     | undefined;
 }) => {
   return (
-    <article className="w-full flex items-start gap-2 border-secondary rounded-md group">
+    <article className="w-full h-full justify-between flex items-start gap-2 border-secondary rounded-md group">
       <img
-        src="https://www.themoviedb.org/t/p/original/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg"
+        src={props.image}
         alt=""
         width="60"
         height="60"
@@ -38,7 +40,6 @@ export const BlogItem = (props: {
           {props.title}.
         </h2>
         <div>
-          <dd>{props.description}</dd>
           <dd className="px-1.5 ring-1 ring-slate-200 rounded w-fit">
             {props.slug}
           </dd>
@@ -48,23 +49,32 @@ export const BlogItem = (props: {
   );
 };
 
-export const BlogMajor = () => {
+export const BlogMajor = (props: {
+  image: string | StaticImport;
+  title:
+    | string
+    | number
+    | boolean
+    | React.ReactElement<any, string | React.JSXElementConstructor<any>>
+    | Iterable<React.ReactNode>
+    | React.ReactPortal
+    | React.PromiseLikeOfReactNode
+    | null
+    | undefined;
+}) => {
   return (
     <div className="relative h-52 items-end flex overflow-hidden rounded-md group cursor-pointer group-hover:shadow-sm group-hover:shadow-black">
       <Image
-        src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        src={props.image}
         width={256}
         height={256}
         alt="an image"
         className="object-fill -z-10 absolute w-full h-full group-hover:scale-105 duration-100"
         unoptimized
       />
-      <div className="text-white flex-col flex p-2 bg-gradient-to-t from-black to-black/10 w-full">
-        <span className="bg-secondary text-white border-white border-[1px] w-fit p-1 text-xs rounded-md">
-          Category
-        </span>
+      <div className="text-white flex-col flex p-2 bg-gradient-to-t from-black to-secondary/5 w-full">
         <span className="text-lg font-normal group-hover:underline duration-100  ">
-          यो एउटा शिर्षक हो र यो शिर्षक निकै राम्रो छ |
+          {props.title}
         </span>
       </div>
     </div>

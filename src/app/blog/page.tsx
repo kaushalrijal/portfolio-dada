@@ -21,7 +21,6 @@ const getData = async () => {
 
 const Blogs = async () => {
   const data: simpleBlogCard[] = await getData();
-  console.log(data);
 
   return (
     <div className="w-full min-h-[498px]">
