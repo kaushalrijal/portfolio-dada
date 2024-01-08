@@ -2,18 +2,9 @@ import Link from "next/link";
 import React from "react";
 
 const Blog = (props: {
+  categories: any;
   slug: any;
   img: string | undefined;
-  category:
-    | string
-    | number
-    | boolean
-    | React.ReactElement<any, string | React.JSXElementConstructor<any>>
-    | Iterable<React.ReactNode>
-    | React.ReactPortal
-    | React.PromiseLikeOfReactNode
-    | null
-    | undefined;
   title:
     | string
     | number
@@ -43,9 +34,28 @@ const Blog = (props: {
         </Link>
       </div>
       <div className="h-2/5">
-        <h3 className="text-sm ring-1 ring-secondary rounded-md w-fit p-1 my-2">
-          {props.category}
-        </h3>
+        {props.categories?.map(
+          (
+            category:
+              | string
+              | number
+              | boolean
+              | React.ReactElement<
+                  any,
+                  string | React.JSXElementConstructor<any>
+                >
+              | Iterable<React.ReactNode>
+              | React.ReactPortal
+              | React.PromiseLikeOfReactNode
+              | null
+              | undefined
+          ) => {
+            <h3 className="text-sm ring-1 ring-secondary rounded-md w-fit p-1 my-2">
+              {category.title}
+            </h3>;
+          }
+        )}
+
         <Link href={`/blog/${props.slug}`}>
           <h1 className="text-lg font-semibold group-hover:text-primary">
             {props.title}

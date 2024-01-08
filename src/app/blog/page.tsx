@@ -11,7 +11,9 @@ const getData = async () => {
     title,
       smallDescription,
       "currentSlug": slug.current,   
-      mainImage 
+      mainImage,
+      "categories": categories[]->{title}
+      
   }   
     `;
   const data = await client.fetch(query);
@@ -31,7 +33,8 @@ const Blogs = async () => {
             <Blog
               img={urlFor(posts.mainImage).url()}
               title={posts.title}
-              category={"BLOG"}
+              // categories={data.categories}
+              categories={["blog", "greaterBlog"]}
               slug={posts.currentSlug}
               description={posts.smallDescription}
               key={posts.currentSlug}
