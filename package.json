@@ -16,7 +16,9 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@mui/icons-material": "^5.15.2",
     "@mui/material": "^5.15.2",
+    "@portabletext/react": "^3.0.11",
     "@sanity/client": "^6.10.0",
+    "@sanity/image-url": "^1.0.2",
     "lucide-react": "^0.294.0",
     "mui": "^0.0.1",
     "next": "14.0.4",
@@ -24,6 +26,7 @@
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.10",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

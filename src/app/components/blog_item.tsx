@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import Image from "next/image";
 
 export const BlogItem = (props: {

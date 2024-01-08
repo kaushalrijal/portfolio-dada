@@ -3,7 +3,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className=" w-full mt-4 text-xs flex flex-col sm:flex-row items-center sm:justify-between ">
+    <div className=" w-full mt-4 text-xs flex flex-col sm:flex-row items-center sm:justify-between bottom-0">
       All rights reserved 2023 &copy; Gaurav Rijal{" "}
       <span>
         Developed and maintained by{" "}
