@@ -26,7 +26,9 @@ const Blogs = async () => {
 
   return (
     <div className="w-full min-h-[498px]">
-      <h1 className="text-3xl italic my-4">बिचार तथा लेखहरु</h1>
+      <h1 className="text-3xl italic my-4 font-semibold">
+        <span className="text-primary">बिचार</span>&nbsp;तथा लेखहरु
+      </h1>
       <div className="grid grid-cols-1 lg:grid-cols-2 mt-2 gap-4 w-full ">
         {data.map((posts) => {
           return (
