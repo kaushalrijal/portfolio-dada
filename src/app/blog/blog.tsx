@@ -51,7 +51,7 @@ const Blog = (props: {
               | undefined
           ) => {
             <h3 className="text-sm ring-1 ring-secondary rounded-md w-fit p-1 my-2">
-              {category.title}
+              Blog
             </h3>;
           }
         )}
