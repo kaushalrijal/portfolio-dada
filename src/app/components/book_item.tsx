@@ -1,7 +1,30 @@
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import Image from "next/image";
 import React from "react";
 
-const Book = (props) => {
+const Book = (props: {
+  img: string | StaticImport;
+  title:
+    | string
+    | number
+    | boolean
+    | React.ReactElement<any, string | React.JSXElementConstructor<any>>
+    | Iterable<React.ReactNode>
+    | React.ReactPortal
+    | React.PromiseLikeOfReactNode
+    | null
+    | undefined;
+  price:
+    | string
+    | number
+    | boolean
+    | React.ReactElement<any, string | React.JSXElementConstructor<any>>
+    | Iterable<React.ReactNode>
+    | React.ReactPortal
+    | React.PromiseLikeOfReactNode
+    | null
+    | undefined;
+}) => {
   return (
     <div className="border-2 bg-white border-secondary flex items-center justify-center flex-col w-auto p-2 rounded-md group hover:scale-105 duration-75 ease-linear cursor-pointer">
       <Image

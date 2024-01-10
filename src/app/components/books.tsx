@@ -29,18 +29,49 @@ const Books = async () => {
         </div>
       </span>
       <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-3 items-center px-2 sm:px-0">
-        {books.map((book, id) => {
-          return id <= 5 ? (
-            <Book
-              title={book.title}
-              price={book.price}
-              key={book.title}
-              img={urlFor(book.bookImage).url()}
-            />
-          ) : (
-            ""
-          );
-        })}
+        {books.map(
+          (
+            book: {
+              title:
+                | boolean
+                | React.ReactElement<
+                    any,
+                    string | React.JSXElementConstructor<any>
+                  >
+                | React.PromiseLikeOfReactNode
+                | Iterable<React.ReactNode>
+                | React.Key
+                | null
+                | undefined;
+              price:
+                | string
+                | number
+                | boolean
+                | React.ReactElement<
+                    any,
+                    string | React.JSXElementConstructor<any>
+                  >
+                | React.ReactPortal
+                | React.PromiseLikeOfReactNode
+                | Iterable<React.ReactNode>
+                | null
+                | undefined;
+              bookImage: any;
+            },
+            id: number
+          ) => {
+            return id <= 5 ? (
+              <Book
+                title={book.title}
+                price={book.price}
+                key={book.title}
+                img={urlFor(book.bookImage).url()}
+              />
+            ) : (
+              ""
+            );
+          }
+        )}
       </div>
     </div>
   );
