@@ -33,17 +33,7 @@ const Books = async () => {
           (
             book: {
               slug: any;
-              title:
-                | boolean
-                | React.ReactElement<
-                    any,
-                    string | React.JSXElementConstructor<any>
-                  >
-                | React.PromiseLikeOfReactNode
-                | Iterable<React.ReactNode>
-                | React.Key
-                | null
-                | undefined;
+              title: string;
               price:
                 | string
                 | number
@@ -61,16 +51,17 @@ const Books = async () => {
             },
             id: number
           ) => {
+            const title = book.title;
             return id <= 5 ? (
               <Link href={`/book/${book.slug}`} key={id}>
                 <Book
                   price={book.price}
                   img={urlFor(book.bookImage).url()}
-                  title={book.title}
+                  title={title}
                 />
               </Link>
             ) : (
-              ""
+              <></>
             );
           }
         )}
