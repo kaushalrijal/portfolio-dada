@@ -2,6 +2,7 @@ import { ArrowRight } from "lucide-react";
 import React from "react";
 import Book from "./book_item";
 import { client, urlFor } from "../../../client";
+import Link from "next/link";
 
 const getData = async () => {
   const query = `
@@ -18,7 +19,6 @@ const getData = async () => {
 
 const Books = async () => {
   const books = await getData();
-
   return (
     <div className="w-full">
       <span className="text-secondary text-3xl font-semibold gap-1 flex justify-between items-center">
@@ -32,6 +32,7 @@ const Books = async () => {
         {books.map(
           (
             book: {
+              slug: any;
               title:
                 | boolean
                 | React.ReactElement<
@@ -61,12 +62,13 @@ const Books = async () => {
             id: number
           ) => {
             return id <= 5 ? (
-              <Book
-                title={book.title}
-                price={book.price}
-                key={book.title}
-                img={urlFor(book.bookImage).url()}
-              />
+              <Link href={`/book/${book.slug}`} key={id}>
+                <Book
+                  price={book.price}
+                  img={urlFor(book.bookImage).url()}
+                  title={book.title}
+                />
+              </Link>
             ) : (
               ""
             );
