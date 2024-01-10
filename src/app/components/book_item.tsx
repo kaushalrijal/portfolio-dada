@@ -35,9 +35,9 @@ const Book = (props: {
         className="h-40 w-auto object-contain hover:object-fill rounded-md"
         unoptimized
       />
-      <h1 className="text-base font-semibold mx-2">{props.title}</h1>
+      <h1 className="text-base font-semibold ">{props.title}</h1>
       <h2 className="w-full flex justify-between">
-        {props.price}
+        Rs.{props.price}
         <span>Book</span>
       </h2>
     </div>
