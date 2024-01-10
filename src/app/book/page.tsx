@@ -1,6 +1,7 @@
 import React from "react";
 import Book from "./book";
 import { client, urlFor } from "../../../client";
+import Link from "next/link";
 
 const getData = async () => {
   const query = `
@@ -28,6 +29,7 @@ const Books = async () => {
         {books.map(
           (
             book: {
+              slug: any;
               bookImage: any;
               title:
                 | string
@@ -72,13 +74,14 @@ const Books = async () => {
             id: React.Key | null | undefined
           ) => {
             return (
-              <Book
-                image={urlFor(book.bookImage).url()}
-                title={book.title}
-                price={book.price}
-                subdetails={book.subdetail}
-                key={id}
-              />
+              <Link href={`/book/${book.slug}`} key={id}>
+                <Book
+                  image={urlFor(book.bookImage).url()}
+                  title={book.title}
+                  price={book.price}
+                  subdetails={book.subdetail}
+                />
+              </Link>
             );
           }
         )}
