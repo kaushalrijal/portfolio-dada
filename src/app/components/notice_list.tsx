@@ -2,8 +2,23 @@ import React from "react";
 import NoticeItem from "./notice_item";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+import { client } from "../../../client";
 
-const Notices = () => {
+const getData = async () => {
+  const query = `
+  *[_type == "notice"] | order(_updatedAt desc){
+    name,
+      url,
+      "date": _createdAt
+  }  
+  `;
+  const data = await client.fetch(query);
+  return data;
+};
+
+const Notices = async () => {
+  const notices = await getData();
+  console.log(notices);
   return (
     <div className="mb-4">
       <span className="text-secondary text-3xl font-semibold gap-1 flex justify-between items-center">
@@ -18,22 +33,9 @@ const Notices = () => {
           </div>
         </Link>
       </span>
-      <NoticeItem
-        title="बागमती || स्वास्थ्य सेवा || सहायक पाँचौ || प.हे.न. || पब्लिक हेल्थ नर्स (Public Health Nurse)"
-        date="this is date"
-      />
-      <NoticeItem
-        title="बागमती || स्वास्थ्य सेवा || सहायक पाँचौ || प.हे.न. || पब्लिक हेल्थ नर्स (Public Health Nurse)"
-        date="this is date"
-      />
-      <NoticeItem
-        title="बागमती || स्वास्थ्य सेवा || सहायक पाँचौ || प.हे.न. || पब्लिक हेल्थ नर्स (Public Health Nurse)"
-        date="this is date"
-      />
-      <NoticeItem
-        title="बागमती || स्वास्थ्य सेवा || सहायक पाँचौ || प.हे.न. || पब्लिक हेल्थ नर्स (Public Health Nurse)"
-        date="this is date"
-      />
+      {notices.map((notice, key) => {
+        return <NoticeItem title={notice.name} date={notice.date} key={key} />;
+      })}
     </div>
   );
 };
