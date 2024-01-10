@@ -35,12 +35,12 @@ export const BlogItem = (props: {
         height="60"
         className="flex-none rounded-md bg-slate-100 w-24 h-24 object-cover"
       />
-      <div className="min-w-0 relative flex-auto">
+      <div className="min-w-0 relative flex-auto ">
         <h2 className="font-semibold text-slate-900 text-ellipsis text-base md:text-sm lg:text-base group-hover:cursor-pointer group-hover:text-primary cursor-pointer">
-          {props.title}.
+          {props.title}
         </h2>
         <div>
-          <dd className="px-1.5 ring-1 ring-slate-200 rounded w-fit">
+          <dd className="px-1.5 ring-1 ring-slate-200 rounded w-fit text-sm">
             {props.slug}
           </dd>
         </div>

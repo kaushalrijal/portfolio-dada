@@ -42,7 +42,8 @@ const Blogs = async () => {
           <Link href={`/blog/${data[1].currentSlug}`}>
             <BlogItem
               title={data[1].title}
-              slug={data[1].currentSlug}
+              // slug={data[1].currentSlug}
+              slug="Blog"
               description={data[1].smallDescription}
               image={urlFor(data[1].mainImage).url()}
             />
@@ -50,7 +51,8 @@ const Blogs = async () => {
           <Link href={`/blog/${data[2].currentSlug}`}>
             <BlogItem
               title={data[2].title}
-              slug={data[2].currentSlug}
+              // slug={data[2].currentSlug}
+              slug="Blog"
               description={data[2].smallDescription}
               image={urlFor(data[2].mainImage).url()}
             />
