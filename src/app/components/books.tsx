@@ -1,8 +1,24 @@
 import { ArrowRight } from "lucide-react";
 import React from "react";
 import Book from "./book_item";
+import { client, urlFor } from "../../../client";
 
-const Books = () => {
+const getData = async () => {
+  const query = `
+  *[_type == "book"]| order(_createdAt desc) {
+    title,
+      price,
+      bookImage,
+      "slug": slug.current,
+  }
+  `;
+  const data = await client.fetch(query);
+  return data;
+};
+
+const Books = async () => {
+  const books = await getData();
+
   return (
     <div className="w-full">
       <span className="text-secondary text-3xl font-semibold gap-1 flex justify-between items-center">
@@ -13,12 +29,18 @@ const Books = () => {
         </div>
       </span>
       <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-3 items-center px-2 sm:px-0">
-        <Book />
-        <Book />
-        <Book />
-        <Book />
-        <Book />
-        <Book />
+        {books.map((book, id) => {
+          return id <= 5 ? (
+            <Book
+              title={book.title}
+              price={book.price}
+              key={book.title}
+              img={urlFor(book.bookImage).url()}
+            />
+          ) : (
+            ""
+          );
+        })}
       </div>
     </div>
   );
