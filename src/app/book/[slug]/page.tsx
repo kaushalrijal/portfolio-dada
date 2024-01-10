@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 import React from "react";
 import { client, urlFor } from "../../../../client";
 
-const getData = async (slug) => {
+const getData = async (slug: any) => {
   const query = `
     *[slug.current == "${slug}"]{
         title,
@@ -16,7 +16,7 @@ const getData = async (slug) => {
   return data;
 };
 
-const Book = async ({ params }) => {
+const Book = async ({ params }: { params: { slug: string } }) => {
   const bookData = await getData(params.slug);
   return (
     <div className="container sm:my-16 ">
