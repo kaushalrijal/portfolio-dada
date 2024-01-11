@@ -24,7 +24,7 @@ const Book = async ({ params }: { params: { slug: string } }) => {
       <img
         src={urlFor(bookData.bookImage).url()}
         alt="Book Cover"
-        className="mb-4 rounded-lg shadow-md sm:float-left mr-4 w-40 h-auto"
+        className="mb-4 rounded-sm shadow-md sm:float-left mr-4 w-40 h-auto"
       />
 
       <div className="text-4xl font-bold text-primary mb-4">
@@ -35,7 +35,7 @@ const Book = async ({ params }: { params: { slug: string } }) => {
           Rs.{bookData.price}
         </div>
         <Link
-          href={`https://wa.me/9852655972/?text=Hi%20I%20want%20the%20book%20${bookData.title}`}
+          href={`https://wa.me/9852655972/?text=Hi%20I%20am%20interested%20in%20buying%20your%20book%20'${bookData.title}'`}
           target="none"
         >
           <div className="flex flex-row items-center bg-primary text-white p-2 rounded-md">
