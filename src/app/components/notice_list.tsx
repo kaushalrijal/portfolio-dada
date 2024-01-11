@@ -12,7 +12,7 @@ const getData = async () => {
     name,
       url,
       "date": _createdAt
-  }  
+  }[0...5]  
   `;
   const data = await client.fetch(query);
   return data;
