@@ -1,6 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import React from "react";
 import { client, urlFor } from "../../../../client";
+import Link from "next/link";
 
 const getData = async (slug: any) => {
   const query = `
@@ -33,9 +34,14 @@ const Book = async ({ params }: { params: { slug: string } }) => {
         <div className="text-lg text-primary border-primary border-2 p-1 rounded-md">
           Rs.{bookData.price}
         </div>
-        <div className="flex flex-row items-center bg-primary text-white p-2 rounded-md">
-          Get this book <ArrowRight className="p-1" />
-        </div>
+        <Link
+          href={`https://wa.me/9852655972/?text=Hi%20I%20want%20the%20book%20${bookData.title}`}
+          target="none"
+        >
+          <div className="flex flex-row items-center bg-primary text-white p-2 rounded-md">
+            Get this book <ArrowRight className="p-1" />
+          </div>
+        </Link>
       </div>
       <div className="text-lg leading-relaxed">
         <p className="text-justify">{bookData.description}</p>
