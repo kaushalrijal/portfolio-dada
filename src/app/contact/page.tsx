@@ -7,7 +7,7 @@ const Contact = () => {
         सम्पर्क
       </span>
       <div className=" my-4">
-        <form className="w-full flex flex-col ">
+        <form className="w-full flex flex-col  gap-3">
           <input type="text" placeholder="नाम" />
           <input type="email" placeholder="Email" />
           <input type="textarea" placeholder="Your Message" />
