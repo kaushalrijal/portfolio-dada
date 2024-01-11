@@ -26,6 +26,7 @@ const Contact = () => {
           <input
             className="p-1 px-6 py-2 border-black focus:border-primary focus:border-2 focus:outline-none border-[1px] text-black placeholder:text-black rounded-md"
             type="text"
+            value={name}
             placeholder="नाम"
             onChange={(e) => setName(e.target.value)}
             required
@@ -33,6 +34,7 @@ const Contact = () => {
           <input
             className="p-1 px-6 py-2 border-black focus:border-primary focus:border-2 focus:outline-none border-[1px] text-black placeholder:text-black rounded-md"
             type="email"
+            value={email}
             placeholder="Email"
             onChange={(e) => setEmail(e.target.value)}
             required
@@ -40,6 +42,7 @@ const Contact = () => {
           <textarea
             className="p-1 px-6 py-2 border-black focus:border-primary focus:border-2 focus:outline-none border-[1px] text-black placeholder:text-black rounded-md"
             placeholder="Your Message"
+            value={message}
             onChange={(e) => setMessage(e.target.value)}
             required
           />
