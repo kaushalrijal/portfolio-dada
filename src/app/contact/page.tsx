@@ -27,7 +27,7 @@ const Contact = () => {
             className="p-1 px-6 py-2 border-black focus:border-primary focus:border-2 focus:outline-none border-[1px] text-black placeholder:text-black rounded-md"
             type="text"
             value={name}
-            placeholder="नाम"
+            placeholder="Name"
             onChange={(e) => setName(e.target.value)}
             required
           />
@@ -41,7 +41,7 @@ const Contact = () => {
           />
           <textarea
             className="p-1 px-6 py-2 border-black focus:border-primary focus:border-2 focus:outline-none border-[1px] text-black placeholder:text-black rounded-md"
-            placeholder="Your Message"
+            placeholder="Message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             required
