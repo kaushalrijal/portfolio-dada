@@ -8,6 +8,9 @@ const Contact = () => {
 
   const Submit = (e) => {
     e.preventDefault();
+    setName("");
+    setEmail("");
+    setMessage("");
   };
 
   return (
