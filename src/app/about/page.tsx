@@ -30,7 +30,7 @@ const details = [
 const About = () => {
   return (
     <div className="w-full flex items-center flex-col px-0.5 sm:px-0">
-      <span className="text-2xl sm:text-3xl my-4 italic font-bold flex items-start justify-start w-full">
+      <span className="text-3xl my-4 italic font-bold flex items-start justify-start w-full">
         <span className="text-primary">मेरो</span>&nbsp;बारेमा
       </span>
       <div className="flex flex-row items-center gap-2 w-full justify-between">
