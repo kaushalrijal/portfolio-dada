@@ -6,7 +6,7 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const Submit = (e) => {
+  const Submit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setName("");
     setEmail("");
