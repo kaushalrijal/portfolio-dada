@@ -39,7 +39,7 @@ export const BlogItem = (props: {
         <h2 className="font-semibold text-slate-900 text-ellipsis text-base md:text-sm lg:text-base group-hover:cursor-pointer group-hover:text-primary cursor-pointer">
           {props.title}
         </h2>
-        <div>
+        <div className="visible sm:hidden">
           <dd className="px-1.5 ring-1 ring-slate-200 rounded w-fit text-sm">
             {props.slug}
           </dd>

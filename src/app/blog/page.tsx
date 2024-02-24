@@ -1,10 +1,7 @@
-"use client";
-
-import React, { useState } from "react";
+import React from "react";
 import { client } from "../../../client";
 import { simpleBlogCard } from "../lib/interface";
 import { BlogItem } from "../components/blog_item";
-import { useEffect } from "react";
 import Blog from "./blog";
 import { urlFor } from "../../../client";
 
@@ -17,7 +14,7 @@ const getData = async () => {
       mainImage,
       "categories": categories[]->{title}
       
-  }     
+  }   
     `;
   const data = await client.fetch(query);
 
@@ -25,11 +22,7 @@ const getData = async () => {
 };
 
 const Blogs = async () => {
-  const data: simpleBlogCard = await getData();
-
-  if (!data) {
-    return <div>Loading...</div>;
-  }
+  const data: simpleBlogCard[] = await getData();
 
   return (
     <div className="w-full min-h-[498px]">
