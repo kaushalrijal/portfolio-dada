@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Book from "./book";
 import { client, urlFor } from "../../../client";
