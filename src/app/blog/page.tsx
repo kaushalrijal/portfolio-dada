@@ -37,7 +37,7 @@ const Blogs = async () => {
             <Blog
               img={urlFor(posts.mainImage).url()}
               title={posts.title}
-              // categories={data.categories}
+              //// categories={data.categories}
               categories={["blog", "greaterBlog"]}
               slug={posts.currentSlug}
               description={posts.smallDescription}
