@@ -33,6 +33,7 @@ const Blogs = async () => {
       </h1>
       <div className="grid grid-cols-1 lg:grid-cols-2 mt-2 gap-4 w-full ">
         {data.map((posts) => {
+          console.log(posts.title);
           return (
             <Blog
               img={urlFor(posts.mainImage).url()}
