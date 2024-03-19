@@ -24,7 +24,7 @@ const getData = async () => {
 };
 
 const Blogs = async () => {
-  const data: simpleBlogCard[] = await getData();
+  const posts: simpleBlogCard[] = await getData();
 
   return (
     <div className="w-full min-h-[498px]">
@@ -32,17 +32,17 @@ const Blogs = async () => {
         <span className="text-primary">बिचार</span>&nbsp;तथा लेखहरु
       </h1>
       <div className="grid grid-cols-1 lg:grid-cols-2 mt-2 gap-4 w-full ">
-        {data.map((posts) => {
-          console.log(posts.title);
+        {posts.map((post) => {
+          console.log(post.title);
           return (
             <Blog
-              img={urlFor(posts.mainImage).url()}
-              title={posts.title}
+              img={urlFor(post.mainImage).url()}
+              title={post.title}
               //// categories={data.categories}
               categories={["blog", "greaterBlog"]}
-              slug={posts.currentSlug}
-              description={posts.smallDescription}
-              key={posts.currentSlug}
+              slug={post.currentSlug}
+              description={post.smallDescription}
+              key={post.currentSlug}
             />
           );
         })}
@@ -50,5 +50,8 @@ const Blogs = async () => {
     </div>
   );
 };
+setInterval(() => {
+  Blogs();
+}, 5000);
 
 export default Blogs;
