@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import { ArrowRight } from "lucide-react";
 import { BlogItem, BlogMajor } from "./blog_item";

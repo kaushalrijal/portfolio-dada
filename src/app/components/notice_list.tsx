@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import NoticeItem from "./notice_item";
 import { ArrowRight } from "lucide-react";
